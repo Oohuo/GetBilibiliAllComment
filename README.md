@@ -1,2 +1,1 @@
-# GetBilibiliAllComment
- 一键生成B站任意视频弹幕词云
+![](http://img.oohuo.com/FllP50vfbVsuU7nncP7-9ZyK2PYk)
