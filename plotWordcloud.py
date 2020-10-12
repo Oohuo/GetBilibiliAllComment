@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 from wordcloud import WordCloud, STOPWORDS
 
 
-def generate_wordcloud(text):
+def generate_wordcloud(text, fileName):
     '''
     输入文本生成词云,如果是中文文本需要先进行分词处理
     '''
@@ -27,7 +27,7 @@ def generate_wordcloud(text):
     wc.generate(text)
 
     # 生成的词云图像保存到本地
-    wc.to_file(path.join(d, "Images//new.png"))
+    wc.to_file(path.join(d, f'Images//{fileName}.png'))
 
     # 显示图像
     plt.imshow(wc, interpolation='bilinear')

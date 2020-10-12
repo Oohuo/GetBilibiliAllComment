@@ -110,7 +110,7 @@ def get_all_dan_mu(date_history_list, bv):
 
 
 if __name__ == '__main__':
-    bv = 'BV1x54y1e7zf'
+    bv = 'BV1wD4y1o7AS'
     # 查看历史弹幕必须先登录，需要发送cookies，请到浏览器登录B站，然后复制cookies
     cookie_str = """sid=8vd13q70; DedeUserID=352344482; DedeUserID__ckMd5=6fd10e5604fdd0f8; SESSDATA=6d229ed3%2C1605761169%2C81fa2*51; bili_jct=4bf80916780eef006feb26a006f9fa92; LIVE_BUVID=AUTO1715902091706163; rpdid=|(YuRJRJRkk0J'ulmukR|kkl; _uuid=D0210717-E454-7B0C-2119-692BF553A92302306infoc; buvid3=E147F691-0ECC-61E1-13CB-53DC1EF5EB1447081infoc; CURRENT_QUALITY=80; blackside_state=1; CURRENT_FNVAL=80; bfe_id=fdfaf33a01b88dd4692ca80f00c2de7f"""
     headers['cookie'] = cookie_str
@@ -131,4 +131,4 @@ if __name__ == '__main__':
     text = chnSegment.word_segment(text)
 
     # 生成词云
-    plotWordcloud.generate_wordcloud(text)
+    plotWordcloud.generate_wordcloud(text, fileName)
